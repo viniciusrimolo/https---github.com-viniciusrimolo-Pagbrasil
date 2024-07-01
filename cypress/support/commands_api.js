@@ -14,7 +14,7 @@ Cypress.Commands.add('contatoForm', (data) => {
   };
  return cy.api({
     method: 'POST',
-    url: 'https://api.restful-api.dev', // Substitua pelo endpoint real da API
+    url: 'https://api.restful-api.dev', 
     body: payload,
    
     failOnStatusCode: false 

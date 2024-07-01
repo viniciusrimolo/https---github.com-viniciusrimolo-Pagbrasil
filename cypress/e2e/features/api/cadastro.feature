@@ -7,7 +7,7 @@ Feature: Formulário de Contato
      
 
     Scenario Outline: Validar formulário de contato com sucesso
-        Given que eu envio o formulário com os dados de cadastro "<Name>" "<Email>" "<Company>" "<Website>" "<Phone>" "<Inquiry>"
+        Given que eu envio o formulário com os dados de cadastro <Name> <Email> <Company> <Website> <Phone> <Inquiry>
 
 
         Then o status da resposta e 200 com possui sucesso true
@@ -18,7 +18,7 @@ Feature: Formulário de Contato
 
  
     Scenario Outline: Validar formulário de contato com dados invalidos
-        Given que eu envio o formulário com os dados de cadastro "<Name>" "<Email>" "<Company>" "<Website>" "<Phone>" "<Inquiry>"
+        Given que eu envio o formulário com os dados de cadastro <Name> <Email> <Company> <Website> <Phone> <Inquiry>
 
 
         Then o status da resposta é 412 mensagem "<mensagem>"
@@ -34,7 +34,7 @@ Feature: Formulário de Contato
 
 
     Scenario Outline: Validar campos obrigatorios do formulário de contato
-        Given que eu envio o formulário com os dados de cadastro "<Name>" "<Email>" "<Company>" "<Website>" "<Phone>" "<Inquiry>"
+        Given que eu envio o formulário com os dados de cadastro <Name> <Email> <Company> <Website> <Phone> <Inquiry>
 
 
         Then o status da resposta é 412 mensagem "<mensagem>"
